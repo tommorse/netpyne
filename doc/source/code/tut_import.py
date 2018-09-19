@@ -114,6 +114,8 @@ simConfig.savePickle = False 		# Save params, network and sim output to pickle f
 simConfig.analysis['plotRaster'] = {'orderInverse': True, 'saveFig': 'tut_import_raster.png'}			# Plot a raster
 simConfig.analysis['plotTraces'] = {'include': [0]} 			# Plot recorded traces for this list of cells
 
+simConfig.useOldProbConn=1
+
 
 # Create network and run simulation
 sim.createSimulateAnalyze(netParams = netParams, simConfig = simConfig)    

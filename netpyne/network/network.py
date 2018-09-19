@@ -92,7 +92,7 @@ class Network (object):
     # Import conn methods
     # -----------------------------------------------------------------------------
     from conn import connectCells, _findPrePostCellsCondition, _connStrToFunc, \
-        fullConn, probConn, randUniqueInt, convConn, divConn, fromListConn, _addCellConn, \
+        fullConn, generateRandsPrePost, probConn, randUniqueInt, convConn, divConn, fromListConn, _addCellConn, \
         _disynapticBiasProb, _disynapticBiasProb2
 
     # -----------------------------------------------------------------------------

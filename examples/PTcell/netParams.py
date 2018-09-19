@@ -169,7 +169,7 @@ if cfg.addNetStim:
 # Subcellular connectivity (synaptic distributions)
 #------------------------------------------------------------------------------   		
 if cfg.addSubConn:
-	with open('conn/conn_dend_PT.json', 'r') as fileObj: connDendPTData = json.load(fileObj)
+	with open('conn/conn_dend_PT.json', 'rb') as fileObj: connDendPTData = json.load(fileObj)
 	
 	#------------------------------------------------------------------------------
 	# Use subcellular distribution from L2/3 -> PT (Suter, 2015)
