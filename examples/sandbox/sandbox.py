@@ -16,6 +16,7 @@ netParams.popParams['I3'] = {'cellType': 'PV', 'numCells': 10, 'cellModel': 'HH_
 netParams.popParams['input'] = {'numCells': 100, 'cellModel': 'NetStim', 'rate': 20, 'noise': 0.75}
 netParams.popParams['input2'] = {'numCells': 50, 'cellModel': 'NetStim', 'rate': 20, 'noise': 0.75}
 
+netParams.popParams['Stim1000Hz'] = {'cellModel': 'VecStim', 'numCells': 48, 'spkTimes': [1,2]}
 
 ## Cell property rules
 netParams.loadCellParamsRule(label='CellRule', fileName='IT2_reduced_cellParams.json')
@@ -62,7 +63,7 @@ simConfig.printSynsAfterRule = True
 simConfig.recordTraces ={'V': {'sec': 'soma', 'loc': 0.5, 'var':'v'}}
 simConfig.saveJson=1
 
-lfp=0
+lfp=1
 if lfp:
   #simConfig.analysis['plotLFP'] = {'includeAxon': False, 'figSize': (6,10), 'plots': ['timeSeries'], 'NFFT': 256*2, 'noverlap': 128*2, 'nperseg': 132*2, 'saveFig': True} 
   simConfig.recordLFP = [[10,10,10]]

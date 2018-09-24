@@ -342,7 +342,6 @@ def probConn (self, preCellsTags, postCellsTags, connParam):
     if sim.cfg.verbose: print 'Generating set of probabilistic connections (rule: %s) ...' % (connParam['label'])
 
     allRands = self.generateRandsPrePost(preCellsTags.keys(), postCellsTags.keys())  # Create an array of random numbers for checking each connection        
-    
 
     # get list of params that have a lambda function
     paramsStrFunc = [param for param in [p+'Func' for p in self.connStringFuncParams] if param in connParam] 
